@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         cbShowNum.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//                badgeView.setShowNum(isChecked);
-//                badgeView.redraw();
+                badgeView.setShowNum(isChecked);
+                badgeView.redraw();
                 bvIcon.setShowNum(isChecked);
                 bvIcon.redraw();
             }
@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
                     int num = Integer.parseInt(text);
                     badgeView.setBadgeNum(num);
                     badgeView.redraw();
-//                    bvIcon.setBadgeNum(num);
-//                    bvIcon.redraw();
+                    bvIcon.setBadgeNum(num);
+                    bvIcon.redraw();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
                     int left = Integer.parseInt(leftStr);
                     badgeView.setBadgeLocation(bottom, left);
                     badgeView.redraw();
-//                    bvIcon.setBadgeLocation(bottom, left);
-//                    bvIcon.redraw();
+                    bvIcon.setBadgeLocation(bottom, left);
+                    bvIcon.redraw();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
