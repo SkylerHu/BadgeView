@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    >
+
+    <com.skyler.badgeview.BadgeView
+        android:id="@+id/badge_view_with_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+
+        app:text="12766"
+        app:textSize="18sp"
+        app:badgeNumPre="+"
+        app:textColor="@android:color/holo_blue_bright"
+        app:badgeNum="36"
+        app:badgeNumSize="12sp"
+        app:badgeNumColor="@android:color/white"
+        app:badgeBorderColor="@android:color/black"
+        app:badgeBorderWidth="1dp"
+        android:padding="10dp"
+        />
+    <com.skyler.badgeview.BadgeView
+        android:id="@+id/badge_view_with_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+
+        app:iconSrc="@drawable/icon_heart"
+        app:iconSize="50dp"
+        app:badgeNum="3"
+        app:badgeLeft="16dp"
+        app:badgeBottom="10dp"
+
+        android:paddingRight="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_show_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="show Num"
+        android:checked="true"
+        android:textColor="@android:color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_badgenum"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_bg_line"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/btn_set_num"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Set BadgeNum"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom:"
+            android:textColor="@android:color/black"
+            />
+        <EditText
+            android:id="@+id/et_badge_bottom"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_bg_line"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left:"
+            android:textColor="@android:color/black"
+            />
+        <EditText
+            android:id="@+id/et_badge_left"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_bg_line"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/btn_set_badge_location"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Badge Location"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
